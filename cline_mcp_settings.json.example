@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cloudflare-browser-rendering": {
+      "command": "node",
+      "args": ["./dist/src/index.js"],
+      "env": {
+        "BROWSER_RENDERING_API": "https://YOUR_WORKER_URL_HERE"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

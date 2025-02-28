@@ -1,0 +1,36 @@
+{
+  "name": "cloudflare-browser-rendering",
+  "version": "1.0.0",
+  "description": "MCP server for providing web context to LLMs using Cloudflare Browser Rendering",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "node test-puppeteer.js",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "ts-node src/index.ts",
+    "experiment:rest": "ts-node experiments/basic-rest-api/index.ts",
+    "experiment:puppeteer": "ts-node experiments/puppeteer-binding/index.ts",
+    "experiment:content": "ts-node experiments/content-extraction/index.ts",
+    "deploy:worker": "npx wrangler deploy"
+  },
+  "keywords": [
+    "cloudflare",
+    "browser-rendering",
+    "mcp",
+    "llm",
+    "context"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "wrangler": "^3.111.0"
+  },
+  "dependencies": {
+    "@cloudflare/puppeteer": "^0.0.14",
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "axios": "^1.8.1"
+  }
+}
