@@ -2,6 +2,10 @@
 
 This project demonstrates how to use Cloudflare Browser Rendering to extract web content for LLM context. It includes experiments with the REST API and Workers Binding API, as well as an MCP server implementation that can be used to provide web context to LLMs.
 
+<a href="https://glama.ai/mcp/servers/wg9fikq571">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/wg9fikq571/badge" alt="Web Content Server MCP server" />
+</a>
+
 ## Project Structure
 
 ```
