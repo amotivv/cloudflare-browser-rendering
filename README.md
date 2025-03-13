@@ -1,10 +1,13 @@
+
 # Cloudflare Browser Rendering Experiments & MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@amotivv/cloudflare-browser-rendering)](https://smithery.ai/server/@amotivv/cloudflare-browser-rendering)
 This project demonstrates how to use Cloudflare Browser Rendering to extract web content for LLM context. It includes experiments with the REST API and Workers Binding API, as well as an MCP server implementation that can be used to provide web context to LLMs.
 
 <a href="https://glama.ai/mcp/servers/wg9fikq571">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/wg9fikq571/badge" alt="Web Content Server MCP server" />
 </a>
+
 
 ## Project Structure
 
@@ -42,6 +45,14 @@ cloudflare-browser-rendering/
 - Wrangler CLI (for deploying the Worker)
 
 ## Installation
+
+### Installing via Smithery
+
+To install Cloudflare Browser Rendering Experiments & MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@amotivv/cloudflare-browser-rendering):
+
+```bash
+npx -y @smithery/cli install @amotivv/cloudflare-browser-rendering --client claude
+```
 
 1. Clone the repository:
 
